@@ -1,3 +1,6 @@
+// Job 1 A(Langkah 3)
+// Adriano, Raefal, Yulio
+
 const int buttonPin = 4; // the number of the pushbutton pin
 const int ledPin = 5; // the number of the LED pin
 // variable for storing the pushbutton status

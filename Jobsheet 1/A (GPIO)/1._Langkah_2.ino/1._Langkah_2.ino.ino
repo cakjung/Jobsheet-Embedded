@@ -1,3 +1,6 @@
+// Job 1 A(Langkah 2)
+// Adriano, Raefal, Yulio
+
 const int ledPin = 5; // Pin untuk LED
 unsigned long previousMillis = 0; 
 const long interval = 1000;  // interval waktu (1 detik)
