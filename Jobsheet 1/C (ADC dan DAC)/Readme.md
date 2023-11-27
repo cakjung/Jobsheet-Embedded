@@ -3,7 +3,7 @@ Merupakan `Converter` atau pengubah sinyal dari analog ke digital atau sebalikny
 
 Terdapat 2 percobaan yang dilakukan :
 
-# 1. Membaca nilai potensiometer
+## 1. Membaca nilai potensiometer
 **Alat dan Bahan**
 
 - ESP32 (1 buah)
@@ -40,7 +40,7 @@ Program ini mengimplementasikan pembacaan nilai potensiometer pada mikrokontrole
 
 Program ini memberikan pemahaman dasar tentang penggunaan ADC (Analog-to-Digital Converter) pada Arduino. Salah satunya yaitu membaca nilai analog dari potensiometer dan menampilkannya melalui Serial Monitor setiap 500 milidetik. Variabel `potValue` merepresentasikan nilai analog tersebut, dan dapat digunakan untuk pengembangan atau development lebih lanjut sesuai kebutuhan proyek.
 
-# 2. Mengendalikan LED menggunakan potensiometer
+## 2. Mengendalikan LED menggunakan potensiometer
 **Alat dan Bahan**
 
 - ESP32 (1 buah)
@@ -79,7 +79,7 @@ Program ini berfungsi untuk mengendalikan intensitas cahaya LED berdasarkan nila
 
    - Nilai analog dari potensiometer dibaca menggunakan `analogRead()` dan disimpan dalam variabel `sensorValue`.
    
-   - Nilai tersebut kemudian di-mapped dari rentang 0 hingga 4095 (nilai yang mungkin dari pembacaan ADC) ke rentang 0 hingga 255, yang sesuai dengan rentang nilai PWM, menggunakan `map()`.
+   - Nilai tersebut kemudian di-mapped dari rentang 0 hingga 4095 (rentang nilai pembacaan ADC) ke rentang 0 hingga 255, yang sesuai dengan rentang nilai PWM, menggunakan `map()`. Fungsi `map()` digunakan untuk melakukan iterasi objek dalam suatu array, kemudian memodifikasi isi dari setiap objek individu dan dijadikan array baru.
    
    - Nilai tersebut diterapkan sebagai output PWM ke LED menggunakan `analogWrite()`.
    
