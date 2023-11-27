@@ -9,8 +9,9 @@ Terdapat 2 percobaan yang dilakukan :
 # 1. Membuat efek fade pada LED Berkedip dengan menggunakan PWM
 **Alat dan Bahan**
 - ESP32 (1 buah)
-- LED (3 buah)
-- Resistor 220 Ohm (3 buah)
+- LED (1 buah)
+- Resistor 220 Ohm (1 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -54,6 +55,11 @@ Program ini menciptakan efek perlahan naik dan turun pada kecerahan LED, yang um
 
 # 2. Mengendalikan 3 buah LED dengan menggunakan PWM
 **Alat dan Bahan**
+
+- ESP32 (1 buah)
+- LED (3 buah)
+- Resistor 220 Ohm (3 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
