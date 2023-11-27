@@ -6,7 +6,7 @@ output akan mengeluarkan sinyal pulsa digital dengan frekuensi 5000 Hz yang mana
 
 Terdapat 2 percobaan yang dilakukan :
 
-# 1. Membuat efek fade pada LED Berkedip dengan menggunakan PWM
+## 1. Membuat efek fade pada LED Berkedip dengan menggunakan PWM
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (1 buah)
@@ -53,7 +53,7 @@ Program ini memberikan contoh implementasi Pulse Width Modulation (PWM) pada mik
 
 Program ini menciptakan efek perlahan naik dan turun pada kecerahan LED, yang umumnya digunakan untuk menciptakan efek `fade` atau perubahan cahaya yang halus. Nilai delay dan rentang nilai dutyCycle dapat disesuaikan untuk mengatur kecepatan perubahan dan rentang kecerahan LED.
 
-# 2. Mengendalikan 3 buah LED dengan menggunakan PWM
+## 2. Mengendalikan 3 buah LED dengan menggunakan PWM
 **Alat dan Bahan**
 
 - ESP32 (1 buah)
