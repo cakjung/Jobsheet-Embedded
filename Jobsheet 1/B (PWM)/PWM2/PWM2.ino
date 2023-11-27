@@ -1,3 +1,6 @@
+// Job 1 B(Langkah 5)
+// Adriano, Raefal, Yulio
+
 // the number of the LED pin
 const int ledPin = 16; // 16 corresponds to GPIO16
 const int ledPin2 = 17; // 17 corresponds to GPIO17

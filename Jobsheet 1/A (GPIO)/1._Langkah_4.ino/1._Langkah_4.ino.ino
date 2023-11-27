@@ -2,8 +2,8 @@
 // Adriano, Raefal, Yulio
 
 // inisialisasi pin GPIO
-const int buttonPin1 = 4;   
-const int buttonPin2 = 21;  
+const int buttonPin1 = 2;   
+const int buttonPin2 = 4;  
 const int ledPin1 = 5;       
 const int ledPin2 = 18;
 

@@ -2,16 +2,16 @@
 // Adriano, Raefal, Yulio
 
 // inisialisasi pin GPIO
-const int buttonPin1 = 4;
-const int buttonPin2 = 21;
-const int buttonPin3 = 22;
-const int ledPin1 = 19; 
-const int ledPin2 = 23;
-const int ledPin3 = 18;
+const int buttonPin1 = 2;
+const int buttonPin2 = 4;
+const int buttonPin3 = 15;
+const int ledPin1 = 5; 
+const int ledPin2 = 18;
+const int ledPin3 = 19;
 
 // array led
 const int numLED = 3;
-const int pinLED[numLED] = {19, 23, 18};
+const int pinLED[numLED] = {5, 18, 19};
 
 // status awal push button
 int buttonState1 = 0;
