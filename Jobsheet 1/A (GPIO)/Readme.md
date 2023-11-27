@@ -1,4 +1,6 @@
-# GPIO
+# GPIO (General Purpose Input/Output)
+Merupakan pin yang dapat digunakan untuk berbagai tujuan, baik sebagai pin input untuk membaca data dari sensor atau tombol, maupun sebagai pin output untuk mengontrol perangkat seperti LED atau motor.
+
 Percobaan ini ditujukan agar dapat memahami penggunaan pin GPIO pada ESP32. Terdapat 4 percobaan yang berbeda :
 # 1. Membuat Blink LED menggunakan millis()
 **Alat dan Bahan**
@@ -7,6 +9,7 @@ Percobaan ini ditujukan agar dapat memahami penggunaan pin GPIO pada ESP32. Terd
 - Resistor 220 Ohm (1 buah)
 - Resistor 10 kOhm (1 buah)
 - Push Button (1 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -45,6 +48,7 @@ Program ini berfungsi menghasilkan efek berkedip pada LED setiap 1 detik dengan 
 - Resistor 220 Ohm (1 buah)
 - Resistor 10 kOhm (1 buah)
 - Push Button (1 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -89,6 +93,7 @@ Program ini berfungsi menyalakan LED hanya ketika button ditekan, jadi button be
 - Resistor 220 Ohm (2 buah)
 - Resistor 10 kOhm (2 buah)
 - Push Button (2 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -96,17 +101,17 @@ Program ini berfungsi menyalakan LED hanya ketika button ditekan, jadi button be
 
 **Program** <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%201/A%20(GPIO)/1._Langkah_4.ino/1._Langkah_4.ino.ino">(File .ino)</a>
 
-![image](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/934a9c2c-6c56-4c7e-b06f-05337d6f0ffa)
+![image](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/c62988bb-b9e0-49b8-a084-a6ad83eccb2a)
 
 **Flowchart**
 
-![Flowchart Job1 A-4](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/13236481-a557-43a9-873d-3528fc2c1880)
+![Flowchart Job1 A-4](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/babf0559-e508-4dbb-adc7-f2d19848528a)
 
 **Hasil dan Pembahasan**
 
 ![Job 1A_4](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/3ec1ab7c-023f-425a-a32d-bdd115286f46)
 
-Program ini memulai dengan mendeklarasikan pin GPIO untuk dua push button (`buttonPin1` dan `buttonPin2`) serta dua LED (`ledPin1` dan `ledPin2`).
+Program ini merupakan lanjutan dari percobaan sebelumnya, dimana terdapat tambahan 1 buah LED dan 1 buah push button. Untuk itu kita harus memulai dengan mendeklarasikan pin GPIO untuk dua push button (`buttonPin1` dan `buttonPin2`) serta dua LED (`ledPin1` dan `ledPin2`).
 
 Dalam fungsi `setup()`, pin-pin diatur sesuai dengan fungsinya, yaitu push button sebagai input dan LED sebagai output.
 
@@ -129,40 +134,38 @@ Program ini berfungsi menghasilkan efek LED berkedip hanya ketika button ke-2 di
 - Resistor 220 Ohm (3 buah)
 - Resistor 10 kOhm (3 buah)
 - Push Button (3 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
-![Skematik Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/54bbf8d8-14ec-41c8-a6d0-a0d9fb4908b7)
-
+![Skematik Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/be93f95e-6cac-436e-a58f-7e06f1ce5769)
 
 **Program** <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%201/A%20(GPIO)/1._Langkah_5.ino/1._Langkah_5.ino.ino">(File .ino)</a>
 
-![image](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/8bb99a15-12d1-4099-aa03-b66595a3fdea)
-
+![image](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/31b5430e-3301-4ad6-8060-00b7a55ce519)
 
 **Flowchart**
 
-![Flowchart Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/e2619de2-dd2b-4d34-9b21-5f3e86da6693)
-
+![Flowchart Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/31e30171-5ef0-4212-a99e-9f98bda54f54)
 
 **Hasil dan Pembahasan**
 
 ![Job 1A_5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/dba1458c-f8e8-429f-a66c-c3fba2d6dd6d)
 
-Running LED merupakan beberapa lampu LED yang menyala bergantian dengan rapi (kiri ke kanan atau sebaliknya), maka setidaknya dibutuhkan 3 lampu LED untuk menerapkannya.
+Running LED merupakan beberapa lampu LED yang menyala bergantian dengan rapi (kiri ke kanan atau sebaliknya), maka setidaknya dibutuhkan 3 lampu LED untuk menerapkannya. Sama seperti sebelumnya, kita hanya menambahkan satu buah push button sekali lagi dan juga setidaknya 1 buah LED. Agar program kita terlihat lebih efisien, kita bisa menggunakan function `for()`. `For()` merupakan suatu fungsi berupa proses pengulangan tugas/kegiatan pada suatu statement atau lebih secara berulang ulang-ulang selama yang dijadikan acuan tersebut terpenuhi dengan baik.
 
-Program ini mendeklarasikan beberapa pin GPIO untuk push button (`buttonPin1`, `buttonPin2`, dan `buttonPin3`) dan LED (`ledPin1`, `ledPin2`, dan `ledPin3`).
+Setelah itu kita deklarasikan beberapa pin GPIO untuk push button (`buttonPin1`, `buttonPin2`, dan `buttonPin3`) dan LED (`ledPin1`, `ledPin2`, dan `ledPin3`).
 
-Sebuah array bernama `pinLED` digunakan untuk menyimpan pin dari tiga LED. Penggunaan array pinLED memudahkan pengaturan pin untuk LED, memungkinkan perubahan konfigurasi dengan mudah.
+Berbeda dari sebelumnya yang langsung menggunakan digitalWrite(HIGH dan LOW) pada LED PIN, kali ini kita memanfaatkann fungsi for untuk mengulang programnya. Untuk itu kita harus membuat sebuah array bernama `pinLED` yang nantinya digunakan untuk menyimpan pin dari tiga LED. Kita hanya memasukkan saja nomor pin dari semua `pinLED` ke array tersebut secara urut (karena saya menginginkan LED menyala dari kiri ke kanan, maka disini saya mengurutkan dari ledPin1 hingga ledPin 3), setelah itu kita outputkan menggunakan fungsi `for()`.
 
-Dalam fungsi `setup()`, pin-pin diatur sesuai dengan fungsinya, yaitu push button sebagai input dan LED sebagai output. 
+Dalam fungsi `setup()`, pin-pin diatur sesuai dengan fungsinya, yaitu push button sebagai input dan LED sebagai output. Sedangkan fungsi `for()` saya gunakan untuk mengatur semua isi array `pinLED` menjadi output.
 
 Dalam fungsi `loop()`, status dari ketiga push button dibaca dan dicetak ke Serial Monitor. Selanjutnya, terdapat kondisional yang mengatur perilaku LED berdasarkan status push button:
 
    - Jika `buttonState1` (status dari push button pertama) adalah HIGH, maka ketiga LED akan menyala bersamaan.
    - Jika `buttonState2` (status dari push button kedua) adalah HIGH, maka LED 1 dan LED 2 akan berkedip bergantian dengan interval waktu 500 ms.
-   - Jika `buttonState3` (status dari push button ketiga) adalah HIGH, maka ketiga LED akan berkedip secara bergantian. Masing-masing LED akan menyala dan mati dengan interval waktu 500 ms.
+   - Jika `buttonState3` (status dari push button ketiga) adalah HIGH, maka ketiga LED akan berkedip secara bergantian. Masing-masing LED akan menyala dan mati dengan interval waktu 500 ms yang dijalankan menggunakan `for()`.
 
 **Kesimpulan**
 
-Program ini menunjukkan implementasi yang baik dalam mengendalikan beberapa LED dengan beberapa push button. Ketika push button pertama ditekan, ketiga LED akan menyala secara bersamaan. Jika push button kedua ditekan, LED pertama akan menyala, kemudian mati, diikuti oleh LED kedua yang menyala dan mati. Sedangkan saat push button ketiga ditekan, ketiga LED akan berkedip bergantian.
+Program ini menunjukkan implementasi yang baik dalam mengendalikan beberapa LED dengan beberapa push button. Ketika push button pertama ditekan, ketiga LED akan menyala secara bersamaan. Jika push button kedua ditekan, LED pertama akan menyala, kemudian mati, diikuti oleh LED kedua yang menyala dan mati. Sedangkan saat push button ketiga ditekan, ketiga LED akan berkedip bergantian. Kita juga dapat memanfaatkan penggunaan fungi `for()` untuk membuat running LED.
