@@ -1,4 +1,6 @@
-# GPIO
+# GPIO (General Purpose Input/Output)
+Merupakan pin yang dapat digunakan untuk berbagai tujuan, baik sebagai pin input untuk membaca data dari sensor atau tombol, maupun sebagai pin output untuk mengontrol perangkat seperti LED atau motor.
+
 Percobaan ini ditujukan agar dapat memahami penggunaan pin GPIO pada ESP32. Terdapat 4 percobaan yang berbeda :
 # 1. Membuat Blink LED menggunakan millis()
 **Alat dan Bahan**
