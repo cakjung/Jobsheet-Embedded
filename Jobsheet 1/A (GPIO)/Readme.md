@@ -7,6 +7,7 @@ Percobaan ini ditujukan agar dapat memahami penggunaan pin GPIO pada ESP32. Terd
 - Resistor 220 Ohm (1 buah)
 - Resistor 10 kOhm (1 buah)
 - Push Button (1 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -45,6 +46,7 @@ Program ini berfungsi menghasilkan efek berkedip pada LED setiap 1 detik dengan 
 - Resistor 220 Ohm (1 buah)
 - Resistor 10 kOhm (1 buah)
 - Push Button (1 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -89,6 +91,7 @@ Program ini berfungsi menyalakan LED hanya ketika button ditekan, jadi button be
 - Resistor 220 Ohm (2 buah)
 - Resistor 10 kOhm (2 buah)
 - Push Button (2 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
@@ -129,6 +132,7 @@ Program ini berfungsi menghasilkan efek LED berkedip hanya ketika button ke-2 di
 - Resistor 220 Ohm (3 buah)
 - Resistor 10 kOhm (3 buah)
 - Push Button (3 buah)
+- Kabel Jumper (secukupnya)
 
 **Skema Rangkaian**
 
