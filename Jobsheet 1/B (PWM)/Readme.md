@@ -77,7 +77,7 @@ Program ini menciptakan efek perlahan naik dan turun pada kecerahan LED, yang um
 
 ![Job 1B_2](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/2bd4008b-b1fa-4960-8ae7-ec75085a26d2)
 
-Pada percobaan kedua ini pada dasarnya sama dengan percobaan pertama, hanya saja terdapat 2 LED tambahan. Untuk itu, kita tambahkan 2 variabel baru untuk menginisialisasi pin GPIO (yaitu GPIO 17 dan GPIO 5). Kemudian kita tambahkan 2 fungsi ledAttachPin() baru untuk mengaktifkan konfigurasi PWM pada 2 pin GPIO tersebut (17 dan 5).
+Pada percobaan kedua ini pada dasarnya sama dengan percobaan pertama, hanya saja terdapat 2 LED tambahan. Untuk itu, kita tambahkan 2 variabel baru untuk menginisialisasi pin GPIO (yaitu GPIO 17 dan GPIO 5). Kemudian kita tambahkan 2 fungsi `ledcAttachPin()` untuk mengaktifkan konfigurasi PWM pada 2 pin GPIO tersebut (17 dan 5).
 
 **Kesimpulan**
 
