@@ -6,7 +6,7 @@ output akan mengeluarkan sinyal pulsa digital dengan frekuensi 5000 Hz yang mana
 
 Terdapat 2 percobaan yang dilakukan :
 
-# 1. Membuat efek fade pada LED Berkedip dengan menggunakan PWM
+## 1. Membuat efek fade pada LED Berkedip dengan menggunakan PWM
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (1 buah)
@@ -53,7 +53,7 @@ Program ini memberikan contoh implementasi Pulse Width Modulation (PWM) pada mik
 
 Program ini menciptakan efek perlahan naik dan turun pada kecerahan LED, yang umumnya digunakan untuk menciptakan efek `fade` atau perubahan cahaya yang halus. Nilai delay dan rentang nilai dutyCycle dapat disesuaikan untuk mengatur kecepatan perubahan dan rentang kecerahan LED.
 
-# 2. Mengendalikan 3 buah LED dengan menggunakan PWM
+## 2. Mengendalikan 3 buah LED dengan menggunakan PWM
 **Alat dan Bahan**
 
 - ESP32 (1 buah)
@@ -77,7 +77,7 @@ Program ini menciptakan efek perlahan naik dan turun pada kecerahan LED, yang um
 
 ![Job 1B_2](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/2bd4008b-b1fa-4960-8ae7-ec75085a26d2)
 
-Pada percobaan kedua ini pada dasarnya sama dengan percobaan pertama, hanya saja terdapat 2 LED tambahan. Untuk itu, kita tambahkan 2 variabel baru untuk menginisialisasi pin GPIO (yaitu GPIO 17 dan GPIO 5). Kemudian kita tambahkan 2 fungsi ledAttachPin() baru untuk mengaktifkan konfigurasi PWM pada 2 pin GPIO tersebut (17 dan 5).
+Pada percobaan kedua ini pada dasarnya sama dengan percobaan pertama, hanya saja terdapat 2 LED tambahan. Untuk itu, kita tambahkan 2 variabel baru untuk menginisialisasi pin GPIO (yaitu GPIO 17 dan GPIO 5). Kemudian kita tambahkan 2 fungsi `ledcAttachPin()` untuk mengaktifkan konfigurasi PWM pada 2 pin GPIO tersebut (17 dan 5).
 
 **Kesimpulan**
 

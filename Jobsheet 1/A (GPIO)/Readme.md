@@ -2,7 +2,7 @@
 Merupakan pin yang dapat digunakan untuk berbagai tujuan, baik sebagai pin input untuk membaca data dari sensor atau tombol, maupun sebagai pin output untuk mengontrol perangkat seperti LED atau motor.
 
 Percobaan ini ditujukan agar dapat memahami penggunaan pin GPIO pada ESP32. Terdapat 4 percobaan yang berbeda :
-# 1. Membuat Blink LED menggunakan millis()
+## 1. Membuat Blink LED menggunakan millis()
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (1 buah)
@@ -41,7 +41,7 @@ Pada bagian setup(), `ledPin` diatur sebagai OUTPUT dengan menggunakan pinMode()
 
 Program ini berfungsi menghasilkan efek berkedip pada LED setiap 1 detik dengan menggunakan fungsi millis() untuk menghindari ketergantungan atau sinkronisasi waktu (blocking), sehingga cocok digunakan sebagai timer untuk program LED berkedip.
 
-# 2. Membuat Blink LED saat penekanan button
+## 2. Membuat Blink LED saat penekanan button
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (1 buah)
@@ -86,7 +86,7 @@ Pada bagian `loop()`, program menjalankan beberapa tugas berulang kali:
 
 Program ini berfungsi menyalakan LED hanya ketika button ditekan, jadi button berfungsi sebagai saklar atau switch. Selain itu, kondisi dari button juga tercatat pada serial monitor.
 
-# 3. Membuat Blink LED berdurasi 500ms saat penekanan button
+## 3. Membuat Blink LED berdurasi 500ms saat penekanan button
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (2 buah)
@@ -127,7 +127,7 @@ Program ini secara umum memahami input dari push button dan mengendalikan LED se
 
 Program ini berfungsi menghasilkan efek LED berkedip hanya ketika button ke-2 ditekan, dan hanya menyalakan (tidak berkedip) kedua LED ketika button ke-1 ditekan. Selain itu, kondisi dari setiap button juga tercatat pada serial monitor.
 
-# 4. Membuat Running LED saat penekanan button
+## 4. Membuat Running LED saat penekanan button
 **Alat dan Bahan**
 - ESP32 (1 buah)
 - LED (3 buah)
