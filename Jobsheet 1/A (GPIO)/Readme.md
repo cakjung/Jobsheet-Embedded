@@ -140,7 +140,7 @@ Program ini berfungsi menghasilkan efek LED berkedip hanya ketika button ke-2 di
 
 **Flowchart**
 
-![Flowchart Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/aab935f8-9026-4679-ae62-78701c02c876)
+![Flowchart Job1 A-5](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/31e30171-5ef0-4212-a99e-9f98bda54f54)
 
 **Hasil dan Pembahasan**
 
