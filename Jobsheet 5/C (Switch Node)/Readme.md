@@ -1,8 +1,7 @@
 # Switch Node
 Pada percobaan ini kita akan menggunakan `switch node` untuk memproses suatu data yang akan dikirimkan.
 
-## Menggunakan Switch Node
-**Alat dan Bahan**
+### Alat dan Bahan
 
 Software :
 
@@ -14,15 +13,16 @@ Node :
 - Debug (2 buah)
 - Switch (1 buah)
 
-**Program** <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%205/C%20(Switch%20Node)/flows%20(Job%205-C).json">(File flows.json)</a>
+### Program 
+<a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%205/C%20(Switch%20Node)/flows%20(Job%205-C).json">(File flows.json)</a>
 
 ![image](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/eebc83b6-18fe-4ca4-b4cb-3445791de972)
 
-**Flowchart**
+### Flowchart
 
 ![Flowchart Job 5-C](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/78ebac3e-bcd2-4586-ba8d-24e11a950022)
 
-**Hasil dan Pembahasan**
+### Hasil dan Pembahasan
 
 ![Job 5-C](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/563102b4-0adf-4fb9-835f-bb0deede2f82)
 
@@ -38,6 +38,6 @@ Karena pada percobaan ini kita hanya menentukan apakah jumlah inputan angka mele
 
 Aksi pertama akan meneruskan pesan ke output pertama jika benar, sedangkan apabila yang benar adalah aksi kedua, maka pesan akan diteruskan ke output kedua.
 
-**Kesimpulan**
+### Kesimpulan
 
 Switch node berfungsi untuk merubah atau memodifikasi pesan atau data agar sesuai dengan apa yang kita inginkan, dimana kita hanya perlu menambahkan aksi saja tanpa perlu melakukan coding atau pemrograman seperti pada function node.
