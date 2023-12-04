@@ -68,7 +68,7 @@ Node :
 
 ### Flowchart
 
-![Flowchart Job 6-C2](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/cd7ee44d-19ce-4ccf-9e6f-522b61f7c74e)
+![Flowchart Job 6-C2](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/ec4d4695-85f4-4045-9767-b0e318e78f8f)
 
 ### Hasil dan Pembahasan
 Pada percobaan ini saya menggunakan program pada node function untuk menyeleksi tipe data dari pesan, jadi letak pembedanya hanya ada pada node function yang berfungsi sebagai switch.
