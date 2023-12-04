@@ -30,17 +30,17 @@ Sesuai soal bahwa terdapat 4 node input yang masing-masing berisi data berupa st
 
 **Isi Function Node**
 ```js
-if (typeof msg.payload === "string") {
-    return [msg];
+if (typeof msg.payload === "string") { 
+    return [msg];    // jika tipe pesan adalah string, maka teruskan pesan ke output pertama
 }
 else if (typeof msg.payload === "number") {
-    return [null, msg];
+    return [null, msg];    // jika tipe pesan adalah number, maka teruskan pesan ke output kedua
 }
 else if (typeof msg.payload === "boolean") {
-    return [null, null, msg];
+    return [null, null, msg];    // jika tipe pesan adalah boolean, maka teruskan pesan ke output ketiga
 }
 else if (typeof msg.payload === "object") {
-    return [null, null, null, msg];
+    return [null, null, null, msg];    // jika tipe pesan adalah objek, maka teruskan pesan ke output keempat
 }
 return msg;
 ```
