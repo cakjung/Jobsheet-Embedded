@@ -12,7 +12,8 @@ Software :
 - Node-red
 - Mosquitto Broker
 - MQTT Box
-- Database Server
+- XAMPP
+- MySQL Server
 
 Node :
 - Inject (2 buah)
