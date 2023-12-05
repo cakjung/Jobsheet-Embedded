@@ -21,6 +21,7 @@ Node :
 - JSON Parser (2 buah)
 - Function (12 buah)
 - Debug (16 buah)
+- Mysql (2 buah)
 
 ### Program 
 <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%206/D%20(Project)/flows%20(Job%206-Project).json">(File flows.json)</a>
