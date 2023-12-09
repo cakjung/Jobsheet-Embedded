@@ -20,7 +20,7 @@ Terdapat 2 percobaan yang dilakukan :
 
 **Flowchart**
 
-![Flowchart Job1 C-1 (ADC)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/723f507e-aaea-448b-9246-61b69f6be7af)
+![Flowchart Job1 C-1 (ADC)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/51acfee7-a9c2-4aea-8c64-42fd590c8b07)
 
 **Hasil dan Pembahasan**
 
@@ -34,7 +34,15 @@ Program ini mengimplementasikan pembacaan nilai potensiometer pada mikrokontrole
 
 3. **Setup()**: Dalam fungsi `setup()`, program menginisialisasi komunikasi serial dengan `Serial.begin(115200)` untuk berkomunikasi dengan Serial Monitor pada baudrate 115200. Terdapat juga jeda waktu 1 detik (`delay(1000)`) sebelum eksekusi program dimulai.
 
-4. **Loop()**: Fungsi `loop()` berisi langkah-langkah yang akan diulang terus menerus. Pada setiap iterasi, nilai analog dari potensiometer dibaca menggunakan `analogRead(potPin)`, dan nilai tersebut kemudian dicetak ke Serial Monitor dengan `Serial.println(potValue)`. Ada juga delay 500 milidetik (`delay(500)`) setelah setiap pembacaan nilai potensiometer untuk mengendalikan laju tampilan nilai pada Serial Monitor.
+4. **Loop()**: Fungsi `loop()` berisi langkah-langkah yang akan diulang terus menerus.
+```cpp
+void loop(){
+    potValue = analogRead(potPin);
+    serial.println(potValue);
+    delay(500);
+)
+```
+Jadi pada setiap iterasi atau pengulangan, nilai analog dari potensiometer dibaca menggunakan `analogRead(potPin)`, dan nilai tersebut kemudian dicetak ke Serial Monitor dengan `Serial.println(potValue)`. Ada juga delay 500 milidetik (`delay(500)`) setelah setiap pembacaan nilai potensiometer untuk mengendalikan laju tampilan nilai pada Serial Monitor.
 
 **Kesimpulan**
 
@@ -59,7 +67,7 @@ Program ini memberikan pemahaman dasar tentang penggunaan ADC (Analog-to-Digital
 
 **Flowchart**
 
-![Flowchart Job1 C-2 (DAC)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/30d99a17-33fe-4535-aeb2-125b44cbb49a)
+![Flowchart Job1 C-2 (DAC)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/8eabc82c-2dae-42aa-b787-e7a60458ef52)
 
 **Hasil dan Pembahasan**
 
@@ -75,7 +83,15 @@ Program ini berfungsi untuk mengendalikan intensitas cahaya LED berdasarkan nila
 
 2. **Setup()**: Dalam fungsi `setup()`, program menginisialisasi komunikasi serial dengan `Serial.begin(115200)`. Selain itu, konfigurasi PWM untuk LED diatur dengan `ledcSetup()` dan dihubungkan ke pin dengan `ledcAttachPin()`.
 
-3. **Loop()**: Fungsi `loop()` berisi langkah-langkah yang diulang terus menerus. Pada setiap iterasi:
+3. **Loop()**: Fungsi `loop()` berisi langkah-langkah yang diulang terus menerus.
+```cpp
+void loop() {
+    sensorValue = analogRead(analogInPin); // read the analog in value:
+    outputValue = map(sensorValue, 0, 4095, 0, 255); // map it to the range of the analog out:
+    analogWrite(analogOutPin, outputValue);
+}
+```
+Jadi pada setiap iterasi:
 
    - Nilai analog dari potensiometer dibaca menggunakan `analogRead()` dan disimpan dalam variabel `sensorValue`.
    
