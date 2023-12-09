@@ -97,6 +97,7 @@ Program ini berfungsi menyalakan LED hanya ketika button ditekan, jadi button be
 
 **Skema Rangkaian**
 
+![Skematik (Job 1-A 4)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/e328903d-42a6-41aa-88fd-4aa85b0f4d53)
 
 **Program** <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%201/A%20(GPIO)/1._Langkah_4.ino/1._Langkah_4.ino.ino">(File .ino)</a>
 
@@ -137,6 +138,7 @@ Program ini berfungsi menghasilkan efek LED berkedip hanya ketika button ke-2 di
 
 **Skema Rangkaian**
 
+![Skematik (Job 1-A 5)](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/8491d78c-4a90-47d6-b3db-aebf0a23ed17)
 
 **Program** <a href="https://github.com/cakjung/Jobsheet-Embedded/blob/main/Jobsheet%201/A%20(GPIO)/1._Langkah_5.ino/1._Langkah_5.ino.ino">(File .ino)</a>
 
