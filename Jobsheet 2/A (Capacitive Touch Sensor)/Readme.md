@@ -210,7 +210,7 @@ Berbeda dengan program sebelumnya, program kali ini lebih sensitif. Hal ini dise
 
 ### Hasil dan Pembahasan
 
-![Job-2-A_4](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/db78f505-8f1c-4d8c-9928-eb3fb0029005)
+![Job-2-A_4](https://github.com/cakjung/Jobsheet-Embedded/assets/128274951/84294871-20f8-4c7f-ac81-aa0a3085b327)
 
 Percobaan ini adalah pengembangan dari percobaan sebelumnya, dimana nilai inputan sensor sentuh dimanfaatkan untuk menampilkan jumlah sentuhan pada layar serial monitor. Untuk itu terdapat beberapa perubahan pada program, berikut analisis singkat dari program yang digunakan:
 
