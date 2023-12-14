@@ -1,3 +1,6 @@
+// Job 2-C
+// Adriano, Refal, Yulio
+
 #include <SPI.h>
 #include <MFRC522.h>
 #define SS_PIN 21 // ESP32 pin GIO21 

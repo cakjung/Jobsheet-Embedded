@@ -1,3 +1,6 @@
+// Job 2-A 4
+// Adriano, Refal, Yulio
+
 // ESP32 Touch Test - Initialize touchValue to 0 and increment when touchPin is touched
 // Just test touch pin - Touch0 is T0 which is on GPIO 4.
 const int ledPin = 16;
@@ -18,6 +21,6 @@ void loop() {
     delay(1000); // Tunggu selama 1 detik
   }
 
-  Serial.println("Touch Value: " + String(touchValue)); // Tampilkan touchValue di Serial Monitor
+  Serial.println("jumlah sentuhan = " + String(touchValue)); // Tampilkan touchValue di Serial Monitor
   delay(500);
 }

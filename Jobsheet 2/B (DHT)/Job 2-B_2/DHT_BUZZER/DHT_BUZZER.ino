@@ -1,5 +1,7 @@
-#include <DHT.h>
+// Job 2-B 2
+// Adriano, Refal, Yulio
 
+#include <DHT.h>
 #define DHT_PIN 4   // Pin yang digunakan untuk sensor suhu DHT
 #define LED_PIN 5   // Pin yang digunakan untuk LED Merah
 #define BUZZER_PIN 18 // Pin yang digunakan untuk Buzzer
@@ -17,6 +19,11 @@ void setup() {
 void loop() {
   float temperature = dht.readTemperature(); // Membaca suhu dari sensor DHT
 
+  if (isnan(temperature)) {
+    Serial.println(F("Gagal membaca suhu"));
+    return;
+  }
+
   Serial.print("Suhu: ");
   Serial.print(temperature);
   Serial.println(" °C");
@@ -30,5 +37,5 @@ void loop() {
     noTone(BUZZER_PIN);          // Mematikan Buzzer
   }
 
-  delay(100); // Memberi jeda selama 1 detik (1000ms) sebelum membaca suhu lagi
+  delay(100); // Memberi jeda selama 100 ms sebelum membaca suhu lagi
 }

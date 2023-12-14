@@ -1,12 +1,16 @@
+// Job 3-D
+// Adriano, Refal, Yulio
+
 #include <WiFi.h>
 // Replace with your network credentials (STATION)
 const char* ssid = "yoo";
 const char* password = "yooooooo";
 String hostname = "ESP32 Node Temperature";
+
 void initWiFi() {
+ WiFi.setHostname(hostname.c_str()); //define hostname
  WiFi.mode(WIFI_STA);
  WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, INADDR_NONE);
-  WiFi.setHostname(hostname.c_str()); //define hostname
  //wifi_station_set_hostname( hostname.c_str() );
  WiFi.begin(ssid, password);
  Serial.print("Connecting to WiFi ..");

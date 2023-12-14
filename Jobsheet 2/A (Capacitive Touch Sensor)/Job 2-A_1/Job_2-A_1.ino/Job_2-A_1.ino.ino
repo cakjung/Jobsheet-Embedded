@@ -1,3 +1,6 @@
+// Job 2-A 1
+// Adriano, Refal, Yulio
+
 // ESP32 Touch Test
 // Just test touch pin - Touch0 is T0 which is on GPIO 4.
 void setup() {

@@ -1,3 +1,6 @@
+// Job 3-B
+// Adriano, Refal, Yulio
+
 #include <WiFi.h>
 // Replace with your network credentials (STATION)
 const char* ssid = "yoo";
